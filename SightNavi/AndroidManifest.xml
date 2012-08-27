@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sourcethought.sightnavi"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:debuggable="true"
+        android:icon="@drawable/bmy"
+        android:label="@string/app_name" >
+        <activity android:name="com.sourcethought.sightnavi.view.SelectLanguageActivity" android:configChanges="keyboard|keyboardHidden|orientation">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.sourcethought.sightnavi.view.SearchSightSpotActivity" android:configChanges="keyboard|keyboardHidden|orientation">
+        </activity>
+        <activity android:name="com.sourcethought.sightnavi.view.ContentViewActivity" android:configChanges="keyboard|keyboardHidden|orientation">
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" >
+    </uses-permission>
+
+</manifest>

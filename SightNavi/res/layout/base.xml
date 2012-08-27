@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mainRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+    </RelativeLayout>
+
+    <com.sourcethought.sightnavi.view.NavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp" />
+
+</LinearLayout>

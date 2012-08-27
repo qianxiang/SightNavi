@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sights>
+	<sight>
+		<id>74:2f:68:65:84:f3</id>
+		<name>sight 1</name>
+		<duration>1000</duration>
+		<content>/en/s1/index.html</content>
+		<audio>/en/s1/audio.mp3</audio>
+	</sight>
+	<sight>
+		<id>F0:08:F1:58:A2:15</id>
+		<name>sight 2</name>
+		<duration>2000</duration>
+		<content>/en/s1/index.html</content>
+		<audio>/en/s1/audio.mp3</audio>
+	</sight>
+	<sight>
+		<id>88:55:50:03:91:20</id>
+		<name>sight 3</name>
+		<duration>3000</duration>
+		<content>/en/s1/index.html</content>
+		<audio>/en/s1/audio.mp3</audio>
+	</sight>
+	<sight>
+		<id></id>
+		<name>sight 4</name>
+		<duration>3000</duration>
+		<content>/en/s1/index.html</content>
+		<audio>/en/s1/audio.mp3</audio>
+	</sight>
+	<sight>
+		<id></id>
+		<name>sight 5</name>
+		<duration>3000</duration>
+		<content>/en/s1/index.html</content>
+		<audio>/en/s1/audio.mp3</audio>
+
+	</sight>
+	<sight>
+		<id></id>
+		<name>sight 6</name>
+		<duration>3000</duration>
+		<content>/en/s1/index.html</content>
+		<audio>/en/s1/audio.mp3</audio>
+	</sight>
+	<sight>
+		<id></id>
+		<name>sight 7</name>
+		<duration>3000</duration>
+		<content>/en/s1/index.html</content>
+		<audio>/en/s1/audio.mp3</audio>
+	</sight>
+	<sight>
+		<id></id>
+		<name>sight 8</name>
+		<duration>3000</duration>
+		<content>/en/s1/index.html</content>
+		<audio>/en/s1/audio.mp3</audio>
+	</sight>
+	<sight>
+		<id>E0:F8:47:38:9C:15</id>
+		<name>sight 9</name>
+		<duration>3000</duration>
+		<content>/en/s1/index.html</content>
+		<audio>/en/s1/audio.mp3</audio>
+	</sight>
+</sights>
