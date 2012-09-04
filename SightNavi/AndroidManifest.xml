@@ -8,7 +8,7 @@
 
     <application
         android:debuggable="true"
-        android:icon="@drawable/bmy"
+        android:icon="@drawable/bmy_icon"
         android:label="@string/app_name" >
         <activity android:name="com.sourcethought.sightnavi.view.SelectLanguageActivity" android:configChanges="keyboard|keyboardHidden|orientation">
             <intent-filter >

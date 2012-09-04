@@ -1,67 +1,199 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sights>
 	<sight>
-		<id>74:2f:68:65:84:f3</id>
-		<name>sight 1</name>
-		<duration>1000</duration>
-		<content>/en/s1/index.html</content>
-		<audio>/en/s1/audio.mp3</audio>
-	</sight>
-	<sight>
-		<id>F0:08:F1:58:A2:15</id>
-		<name>sight 2</name>
-		<duration>2000</duration>
-		<content>/en/s1/index.html</content>
-		<audio>/en/s1/audio.mp3</audio>
-	</sight>
-	<sight>
-		<id>88:55:50:03:91:20</id>
-		<name>sight 3</name>
-		<duration>3000</duration>
-		<content>/en/s1/index.html</content>
-		<audio>/en/s1/audio.mp3</audio>
-	</sight>
-	<sight>
 		<id></id>
-		<name>sight 4</name>
+		<name>00.欢迎您来到兵马俑</name>
 		<duration>3000</duration>
-		<content>/en/s1/index.html</content>
-		<audio>/en/s1/audio.mp3</audio>
+		<content>/en/00.欢迎您来到兵马俑/welcome.html</content>
+		<audio>/en/00.欢迎您来到兵马俑/15.Welcome.mp3</audio>
 	</sight>
 	<sight>
-		<id></id>
-		<name>sight 5</name>
+		<id>00:11:12:07:83:81</id>
+		<name>01.兵马俑的发现</name>
 		<duration>3000</duration>
-		<content>/en/s1/index.html</content>
-		<audio>/en/s1/audio.mp3</audio>
-
+		<content>/en/01.兵马俑的发现/page.html</content>
+		<audio>/en/01.兵马俑的发现/11.Discovery.mp3</audio>
 	</sight>
 	<sight>
-		<id></id>
-		<name>sight 6</name>
+		<id>00:11:12:16:12:31</id>
+		<name>02.一号坑的军阵</name>
 		<duration>3000</duration>
-		<content>/en/s1/index.html</content>
-		<audio>/en/s1/audio.mp3</audio>
+		<content>/en/02.一号坑的军阵/page.html</content>
+		<audio>/en/02.一号坑的军阵/13.mp3</audio>
 	</sight>
 	<sight>
-		<id></id>
-		<name>sight 7</name>
+		<id>00:11:12:16:12:46</id>
+		<name>03.一号坑的结构</name>
 		<duration>3000</duration>
-		<content>/en/s1/index.html</content>
-		<audio>/en/s1/audio.mp3</audio>
+		<content>/en/03.一号坑的结构/page.html</content>
+		<audio>/en/03.一号坑的结构/14.mp3</audio>
 	</sight>
 	<sight>
-		<id></id>
-		<name>sight 8</name>
+		<id>00:11:12:16:13:33</id>
+		<name>04.一号坑的地砖(缺录音)</name>
 		<duration>3000</duration>
-		<content>/en/s1/index.html</content>
-		<audio>/en/s1/audio.mp3</audio>
+		<content>/en/04.一号坑的地砖/page.html</content>
+		<audio>/en/04.一号坑的地砖/一号坑的地砖.mp3</audio>
+	</sight>	
+	<sight>
+		<id>00:11:12:16:13:19</id>
+		<name>05.夯土隔墙(缺录音)</name>
+		<duration>3000</duration>
+		<content>/en/05.夯土隔墙/page.html</content>
+		<audio>/en/05.夯土隔墙/夯土隔墙.mp3</audio>
 	</sight>
 	<sight>
-		<id>E0:F8:47:38:9C:15</id>
-		<name>sight 9</name>
+		<id>00:11:12:06:01:73</id>
+		<name>06.席纹印痕(缺录音)</name>
 		<duration>3000</duration>
-		<content>/en/s1/index.html</content>
-		<audio>/en/s1/audio.mp3</audio>
+		<content>/en/06.席纹印痕/page.html</content>
+		<audio>/en/06.席纹印痕/席纹印痕.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:11:12:06:01:60</id>
+		<name>07.木质战车</name>
+		<duration>3000</duration>
+		<content>/en/07.木质战车/page.html</content>
+		<audio>/en/07.木质战车/08.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:11:12:06:02:54</id>
+		<name>08.焚毁与修复</name>
+		<duration>3000</duration>
+		<content>/en/08.焚毁与修复/page.html</content>
+		<audio>/en/08.焚毁与修复/17.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:11:12:06:02:62</id>
+		<name>09.二号坑简介</name>
+		<duration>3000</duration>
+		<content>/en/09.二号坑简介/page.html</content>
+		<audio>/en/09.二号坑简介/21.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:10:12:06:03:36</id>
+		<name>10.弩兵阵</name>
+		<duration>3000</duration>
+		<content>/en/10.弩兵阵/page.html</content>
+		<audio>/en/10.弩兵阵/24.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:11:12:06:02:48</id>
+		<name>11.战车阵</name>
+		<duration>3000</duration>
+		<content>/en/11.战车阵/page.html</content>
+		<audio>/en/11.战车阵/25.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:00</id>
+		<name>12.鱼丽阵</name>
+		<duration>3000</duration>
+		<content>/en/12.鱼丽阵/page.html</content>
+		<audio>/en/12.鱼丽阵/22.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:11:12:07:05:11</id>
+		<name>13.骑兵阵</name>
+		<duration>3000</duration>
+		<content>/en/13.骑兵阵/page.html</content>
+		<audio>/en/13.骑兵阵/23.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:11:12:07:03:97</id>
+		<name>14.棚木遗迹</name>
+		<duration>3000</duration>
+		<content>/en/14.棚木遗迹/page.html</content>
+		<audio>/en/14.棚木遗迹/27.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:01</id>
+		<name>15.高级军吏俑</name>
+		<duration>3000</duration>
+		<content>/en/15.高级军吏俑/page.html</content>
+		<audio>/en/15.高级军吏俑/30.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:02</id>
+		<name>16.中级军吏俑</name>
+		<duration>3000</duration>
+		<content>/en/16.中级军吏俑/page.html</content>
+		<audio>/en/16.中级军吏俑/29.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:03</id>
+		<name>17.鞍马骑兵俑</name>
+		<duration>3000</duration>
+		<content>/en/17.鞍马骑兵俑/page.html</content>
+		<audio>/en/17.鞍马骑兵俑/31.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:04</id>
+		<name>18.跪射俑</name>
+		<duration>3000</duration>
+		<content>/en/18.跪射俑/page.html</content>
+		<audio>/en/18.跪射俑/28.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:05</id>
+		<name>19.立射俑</name>
+		<duration>3000</duration>
+		<content>/en/19.立射俑/page.html</content>
+		<audio>/en/19.立射俑/32.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:06</id>
+		<name>20.御手俑</name>
+		<duration>3000</duration>
+		<content>/en/20.御手俑/page.html</content>
+		<audio>/en/20.御手俑/26.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:07</id>
+		<name>21.二号坑兵器</name>
+		<duration>3000</duration>
+		<content>/en/22.二号坑兵器/page.html</content>
+		<audio>/en/22.二号坑兵器/33.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:08</id>
+		<name>22.三号坑</name>
+		<duration>3000</duration>
+		<content>/en/23.三号坑/page.html</content>
+		<audio>/en/23.三号坑/34.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:09</id>
+		<name>23.指挥部</name>
+		<duration>3000</duration>
+		<content>/en/24.指挥部/page.html</content>
+		<audio>/en/24.指挥部/36.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:0A</id>
+		<name>24.铜车马</name>
+		<duration>3000</duration>
+		<content>/en/25.铜车马/page.html</content>
+		<audio>/en/25.铜车马/41.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:0B</id>
+		<name>25.一号车</name>
+		<duration>3000</duration>
+		<content>/en/26.一号车/page.html</content>
+		<audio>/en/26.一号车/42.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:0C</id>
+		<name>26.二号车</name>
+		<duration>3000</duration>
+		<content>/en/27.二号车/page.html</content>
+		<audio>/en/27.二号车/59.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:0D</id>
+		<name>27.铜车马零件</name>
+		<duration>3000</duration>
+		<content>/en/28.铜车马零件/page.html</content>
+		<audio>/en/28.铜车马零件/43.mp3</audio>
 	</sight>
 </sights>

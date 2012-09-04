@@ -2,112 +2,198 @@
 <sights>
 	<sight>
 		<id></id>
-		<name>欢迎您来到兵马俑</name>
+		<name>00.欢迎您来到兵马俑</name>
 		<duration>3000</duration>
-		<content>/zh/welcome.html</content>
-		<audio>/zh/欢迎词.mp3</audio>
+		<content>/zh/00.欢迎您来到兵马俑/welcome.html</content>
+		<audio>/zh/00.欢迎您来到兵马俑/欢迎词.mp3</audio>
 	</sight>
-	
 	<sight>
 		<id>00:11:12:07:83:81</id>
-		<name>二号坑</name>
+		<name>01.兵马俑的发现</name>
 		<duration>3000</duration>
-		<content>/zh/2hk/2hk.html</content>
-		<audio>/zh/2hk/2hk.mp3</audio>
+		<content>/zh/01.兵马俑的发现/page.html</content>
+		<audio>/zh/01.兵马俑的发现/兵马俑的发现.mp3</audio>
 	</sight>
 	<sight>
 		<id>00:11:12:16:12:31</id>
-		<name>鱼丽阵</name>
+		<name>02.一号坑的军阵</name>
 		<duration>3000</duration>
-		<content>/zh/2hk/ylz.html</content>
-		<audio>/zh/2hk/ylz.mp3</audio>
+		<content>/zh/02.一号坑的军阵/page.html</content>
+		<audio>/zh/02.一号坑的军阵/一号坑的军阵.mp3</audio>
 	</sight>
 	<sight>
 		<id>00:11:12:16:12:46</id>
-		<name>骑兵阵</name>
+		<name>03.一号坑的结构</name>
 		<duration>3000</duration>
-		<content>/zh/2hk/qbz.html</content>
-		<audio>/zh/2hk/qbz.mp3</audio>
+		<content>/zh/03.一号坑的结构/page.html</content>
+		<audio>/zh/03.一号坑的结构/一号坑的结构.mp3</audio>
 	</sight>
 	<sight>
 		<id>00:11:12:16:13:33</id>
-		<name>弩兵阵</name>
+		<name>04.一号坑的地砖</name>
 		<duration>3000</duration>
-		<content>/zh/2hk/nbz.html</content>
-		<audio>/zh/2hk/nbz.mp3</audio>
+		<content>/zh/04.一号坑的地砖/page.html</content>
+		<audio>/zh/04.一号坑的地砖/一号坑的地砖.mp3</audio>
 	</sight>	
 	<sight>
 		<id>00:11:12:16:13:19</id>
-		<name>战车阵</name>
+		<name>05.夯土隔墙</name>
 		<duration>3000</duration>
-		<content>/zh/2hk/zcz.html</content>
-		<audio>/zh/2hk/zcz.mp3</audio>
+		<content>/zh/05.夯土隔墙/page.html</content>
+		<audio>/zh/05.夯土隔墙/夯土隔墙.mp3</audio>
 	</sight>
 	<sight>
 		<id>00:11:12:06:01:73</id>
-		<name>立射俑</name>
+		<name>06.席纹印痕</name>
 		<duration>3000</duration>
-		<content>/zh/2hk/lsy.html</content>
-		<audio>/zh/2hk/lsy.mp3</audio>
+		<content>/zh/06.席纹印痕/page.html</content>
+		<audio>/zh/06.席纹印痕/席纹印痕.mp3</audio>
 	</sight>
 	<sight>
 		<id>00:11:12:06:01:60</id>
-		<name>跪射俑</name>
+		<name>07.木质战车</name>
 		<duration>3000</duration>
-		<content>/zh/2hk/gsy.html</content>
-		<audio>/zh/2hk/gsy.mp3</audio>
+		<content>/zh/07.木质战车/page.html</content>
+		<audio>/zh/07.木质战车/木质战车.mp3</audio>
 	</sight>
 	<sight>
 		<id>00:11:12:06:02:54</id>
-		<name>鞍马骑兵俑</name>
+		<name>08.焚毁与修复</name>
 		<duration>3000</duration>
-		<content>/zh/2hk/amqby.html</content>
-		<audio>/zh/2hk/amqby.mp3</audio>
+		<content>/zh/08.焚毁与修复/page.html</content>
+		<audio>/zh/08.焚毁与修复/焚毁与修复.mp3</audio>
 	</sight>
 	<sight>
 		<id>00:11:12:06:02:62</id>
-		<name>中级军吏俑</name>
+		<name>09.二号坑简介</name>
 		<duration>3000</duration>
-		<content>/zh/2hk/zjjly.html</content>
-		<audio>/zh/2hk/zjjly.mp3</audio>
+		<content>/zh/09.二号坑简介/page.html</content>
+		<audio>/zh/09.二号坑简介/二号坑简介.mp3</audio>
 	</sight>
 	<sight>
 		<id>00:10:12:06:03:36</id>
-		<name>高级军吏俑</name>
+		<name>10.弩兵阵</name>
 		<duration>3000</duration>
-		<content>/zh/2hk/gjjly.html</content>
-		<audio>/zh/2hk/gjjly.mp3</audio>
+		<content>/zh/10.弩兵阵/page.html</content>
+		<audio>/zh/10.弩兵阵/弩兵阵.mp3</audio>
 	</sight>
 	<sight>
 		<id>00:11:12:06:02:48</id>
-		<name>御手俑</name>
+		<name>11.战车阵</name>
 		<duration>3000</duration>
-		<content>/zh/2hk/ysy.html</content>
-		<audio>/zh/2hk/ysy.mp3</audio>
+		<content>/zh/11.战车阵/page.html</content>
+		<audio>/zh/11.战车阵/战车阵.mp3</audio>
 	</sight>
 	<sight>
 		<id>00:00:00:00:00:00</id>
-		<name>陶俑展示</name>
+		<name>12.鱼丽阵</name>
 		<duration>3000</duration>
-		<content>/zh/2hk/dxty.html</content>
-		<audio>/zh/2hk/zzz.mp3</audio>
+		<content>/zh/12.鱼丽阵/page.html</content>
+		<audio>/zh/12.鱼丽阵/鱼丽阵.mp3</audio>
 	</sight>
-	
-	
 	<sight>
 		<id>00:11:12:07:05:11</id>
-		<name>铜车马一号车</name>
+		<name>13.骑兵阵</name>
 		<duration>3000</duration>
-		<content>/zh/tcm/tcm_yhc.html</content>
-		<audio>/zh/tcm/tcm_yhc.mp3</audio>
+		<content>/zh/13.骑兵阵/page.html</content>
+		<audio>/zh/13.骑兵阵/骑兵阵.mp3</audio>
 	</sight>
 	<sight>
 		<id>00:11:12:07:03:97</id>
-		<name>铜车马二号车</name>
+		<name>14.棚木遗迹</name>
 		<duration>3000</duration>
-		<content>/zh/tcm/tcm_ehc.html</content>
-		<audio>/zh/tcm/tcm_ehc.mp3</audio>
+		<content>/zh/14.棚木遗迹/page.html</content>
+		<audio>/zh/14.棚木遗迹/棚木遗迹.mp3</audio>
 	</sight>
-	
-	
+	<sight>
+		<id>00:00:00:00:00:01</id>
+		<name>15.高级军吏俑</name>
+		<duration>3000</duration>
+		<content>/zh/15.高级军吏俑/page.html</content>
+		<audio>/zh/15.高级军吏俑/高级军吏俑.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:02</id>
+		<name>16.中级军吏俑</name>
+		<duration>3000</duration>
+		<content>/zh/16.中级军吏俑/page.html</content>
+		<audio>/zh/16.中级军吏俑/中级军吏俑.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:03</id>
+		<name>17.鞍马骑兵俑</name>
+		<duration>3000</duration>
+		<content>/zh/17.鞍马骑兵俑/page.html</content>
+		<audio>/zh/17.鞍马骑兵俑/鞍马骑兵俑.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:04</id>
+		<name>18.跪射俑</name>
+		<duration>3000</duration>
+		<content>/zh/18.跪射俑/page.html</content>
+		<audio>/zh/18.跪射俑/跪射俑.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:05</id>
+		<name>19.立射俑</name>
+		<duration>3000</duration>
+		<content>/zh/19.立射俑/page.html</content>
+		<audio>/zh/19.立射俑/立射俑.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:06</id>
+		<name>20.御手俑</name>
+		<duration>3000</duration>
+		<content>/zh/20.御手俑/page.html</content>
+		<audio>/zh/20.御手俑/御手俑.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:07</id>
+		<name>21.二号坑兵器</name>
+		<duration>3000</duration>
+		<content>/zh/22.二号坑兵器/page.html</content>
+		<audio>/zh/22.二号坑兵器/二号坑兵器.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:08</id>
+		<name>22.三号坑</name>
+		<duration>3000</duration>
+		<content>/zh/23.三号坑/page.html</content>
+		<audio>/zh/23.三号坑/三号坑.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:09</id>
+		<name>23.指挥部</name>
+		<duration>3000</duration>
+		<content>/zh/24.指挥部/page.html</content>
+		<audio>/zh/24.指挥部/指挥部.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:0A</id>
+		<name>24.铜车马</name>
+		<duration>3000</duration>
+		<content>/zh/25.铜车马/page.html</content>
+		<audio>/zh/25.铜车马/铜车马.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:0B</id>
+		<name>25.一号车</name>
+		<duration>3000</duration>
+		<content>/zh/26.一号车/page.html</content>
+		<audio>/zh/26.一号车/一号车.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:0C</id>
+		<name>26.二号车</name>
+		<duration>3000</duration>
+		<content>/zh/27.二号车/page.html</content>
+		<audio>/zh/27.二号车/二号车.mp3</audio>
+	</sight>
+	<sight>
+		<id>00:00:00:00:00:0D</id>
+		<name>27.铜车马零件</name>
+		<duration>3000</duration>
+		<content>/zh/28.铜车马零件/page.html</content>
+		<audio>/zh/28.铜车马零件/铜车马零件.mp3</audio>
+	</sight>
 </sights>
