@@ -14,3 +14,5 @@ gen/
 
 # Local configuration file (sdk path, etc)
 local.properties
+
+BMYLite_en/.DS_Store
