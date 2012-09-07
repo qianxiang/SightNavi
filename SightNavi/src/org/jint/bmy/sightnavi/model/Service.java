@@ -1,9 +1,14 @@
-package com.sourcethought.sightnavi.model;
+package org.jint.bmy.sightnavi.model;
+
+import org.jint.bmy.sightnavi.util.LogUtil;
 
 import android.os.AsyncTask;
 
-import com.sourcethought.sightnavi.util.LogUtil;
 
+/**
+ * @author jintian
+ *
+ */
 public abstract class Service {
 	public static final int TASK_RESULT_SUCCESS = 1;
 	public static final int TASK_RESULT_FAULT = 2;

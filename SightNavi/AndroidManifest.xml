@@ -19,7 +19,7 @@
         </activity>
         <activity android:name="com.sourcethought.sightnavi.view.SearchSightSpotActivity" android:configChanges="keyboard|keyboardHidden|orientation">
         </activity>
-        <activity android:name="com.sourcethought.sightnavi.view.ContentViewActivity" android:configChanges="keyboard|keyboardHidden|orientation">
+        <activity android:name="org.jint.bmy.sightnavi.view.ContentViewActivity" android:configChanges="keyboard|keyboardHidden|orientation">
         </activity>
     </application>
 

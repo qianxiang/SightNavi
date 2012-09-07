@@ -1,7 +1,11 @@
-package com.sourcethought.sightnavi.model;
+package org.jint.bmy.sightnavi.model;
 
 import java.util.ArrayList;
 
+/**
+ * @author jintian
+ *
+ */
 public class SightBSCalculateNearestSight extends Service {
 	private ArrayList<Device> devices;
 	private ArrayList<Sight> sights;

@@ -1,4 +1,4 @@
-package com.sourcethought.sightnavi.util;
+package org.jint.bmy.sightnavi.util;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -8,6 +8,10 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ * @author jintian
+ *
+ */
 public class FileUtil {
 	
 	public static boolean writeFile(String fromPath, String toPath, int bufSize) throws IOException {

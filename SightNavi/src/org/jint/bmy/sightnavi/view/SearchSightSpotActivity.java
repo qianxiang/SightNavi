@@ -1,9 +1,16 @@
-package com.sourcethought.sightnavi.view;
+package org.jint.bmy.sightnavi.view;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Timer;
 import java.util.TimerTask;
+
+import org.jint.bmy.sightnavi.ApplicationContext;
+import org.jint.bmy.sightnavi.model.Device;
+import org.jint.bmy.sightnavi.model.Service;
+import org.jint.bmy.sightnavi.model.Sight;
+import org.jint.bmy.sightnavi.model.SightBSCalculateNearestSight;
+import org.jint.bmy.sightnavi.util.LogUtil;
 
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -21,13 +28,7 @@ import android.widget.GridView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.sourcethought.sightnavi.ApplicationContext;
 import com.sourcethought.sightnavi.R;
-import com.sourcethought.sightnavi.model.Device;
-import com.sourcethought.sightnavi.model.Service;
-import com.sourcethought.sightnavi.model.Sight;
-import com.sourcethought.sightnavi.model.SightBSCalculateNearestSight;
-import com.sourcethought.sightnavi.util.LogUtil;
 
 /**
  * @author jintian

@@ -1,19 +1,24 @@
-package com.sourcethought.sightnavi.view;
+package org.jint.bmy.sightnavi.view;
 
 import java.util.ArrayList;
 import java.util.Locale;
+
+import org.jint.bmy.sightnavi.ApplicationContext;
+import org.jint.bmy.sightnavi.model.Service;
+import org.jint.bmy.sightnavi.model.Sight;
+import org.jint.bmy.sightnavi.model.SightBSLoadSightsByLocale;
 
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioGroup;
 
-import com.sourcethought.sightnavi.ApplicationContext;
 import com.sourcethought.sightnavi.R;
-import com.sourcethought.sightnavi.model.Service;
-import com.sourcethought.sightnavi.model.Sight;
-import com.sourcethought.sightnavi.model.SightBSLoadSightsByLocale;
 
+/**
+ * @author jintian
+ *
+ */
 public class SelectLanguageActivity extends BaseActivity {
 	private Button startButton;
 	private Button playTypeButton;

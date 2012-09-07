@@ -1,7 +1,9 @@
-package com.sourcethought.sightnavi.view;
+package org.jint.bmy.sightnavi.view;
 
 import java.io.File;
 import java.util.Locale;
+
+import org.jint.bmy.sightnavi.util.LogUtil;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -22,8 +24,11 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.sourcethought.sightnavi.R;
-import com.sourcethought.sightnavi.util.LogUtil;
 
+/**
+ * @author jintian
+ *
+ */
 public abstract class BaseActivity extends Activity {
 	protected LayoutInflater layoutInflater;
 	protected ViewGroup rootLayout;

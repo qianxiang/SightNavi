@@ -1,12 +1,17 @@
-package com.sourcethought.sightnavi;
+package org.jint.bmy.sightnavi;
 
 import java.io.File;
 import java.util.ArrayList;
 
+import org.jint.bmy.sightnavi.model.Sight;
+
 import android.os.Environment;
 
-import com.sourcethought.sightnavi.model.Sight;
 
+/**
+ * @author jintian
+ *
+ */
 public class ApplicationContext {
 	public static final int PLAY_TYPE_AUTO = 1;
 	public static final int PLAY_TYPE_MANUAL = 2;

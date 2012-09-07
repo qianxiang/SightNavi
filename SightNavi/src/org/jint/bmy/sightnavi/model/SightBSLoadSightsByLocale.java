@@ -1,4 +1,4 @@
-package com.sourcethought.sightnavi.model;
+package org.jint.bmy.sightnavi.model;
 
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -10,6 +10,10 @@ import android.content.res.AssetManager;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.DomDriver;
 
+/**
+ * @author jintian
+ *
+ */
 public class SightBSLoadSightsByLocale extends Service{
 	private Locale locale;
 	private Context context;

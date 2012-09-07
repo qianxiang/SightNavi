@@ -1,7 +1,11 @@
-package com.sourcethought.sightnavi.model;
+package org.jint.bmy.sightnavi.model;
 
 import android.bluetooth.BluetoothDevice;
 
+/**
+ * @author jintian
+ *
+ */
 public class Device {
 	private short rssi;
 	private String mac;

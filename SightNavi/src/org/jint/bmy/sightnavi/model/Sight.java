@@ -1,7 +1,11 @@
-package com.sourcethought.sightnavi.model;
+package org.jint.bmy.sightnavi.model;
 
 import java.io.Serializable;
 
+/**
+ * @author jintian
+ *
+ */
 public class Sight implements Serializable{
 	
 	private String id;

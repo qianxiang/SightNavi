@@ -1,4 +1,4 @@
-package com.sourcethought.sightnavi.view;
+package org.jint.bmy.sightnavi.view;
 
 import java.util.ArrayList;
 
@@ -14,6 +14,10 @@ import android.widget.TextView;
 
 import com.sourcethought.sightnavi.R;
 
+/**
+ * @author jintian
+ *
+ */
 public class NavigationBar extends RelativeLayout {
 	protected LayoutInflater layoutInflater;
 	protected LinearLayout leftLinearLayout;

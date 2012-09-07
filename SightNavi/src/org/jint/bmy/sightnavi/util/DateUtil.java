@@ -1,10 +1,14 @@
-package com.sourcethought.sightnavi.util;
+package org.jint.bmy.sightnavi.util;
 
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * @author jintian
+ *
+ */
 public class DateUtil {
 
 	public static String getCurrentDate(String pattern) {

@@ -1,9 +1,13 @@
-package com.sourcethought.sightnavi.util;
+package org.jint.bmy.sightnavi.util;
 
 import java.io.IOException;
 
 import android.util.Log;
 
+/**
+ * @author jintian
+ *
+ */
 public class LogUtil {
 	private static String tag;
 	private static String logFilePath;

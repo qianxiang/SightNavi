@@ -1,8 +1,11 @@
-package com.sourcethought.sightnavi.view;
+package org.jint.bmy.sightnavi.view;
 
 import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
+
+import org.jint.bmy.sightnavi.ApplicationContext;
+import org.jint.bmy.sightnavi.model.Sight;
 
 import android.media.MediaPlayer;
 import android.os.Handler;
@@ -13,10 +16,12 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.SeekBar;
 
-import com.sourcethought.sightnavi.ApplicationContext;
 import com.sourcethought.sightnavi.R;
-import com.sourcethought.sightnavi.model.Sight;
 
+/**
+ * @author jintian
+ *
+ */
 public class ContentViewActivity extends BaseActivity {
 	private static final int PLAY_STATE_PLAY = 1;
 	private static final int PLAY_STATE_PAUSE = 2;
