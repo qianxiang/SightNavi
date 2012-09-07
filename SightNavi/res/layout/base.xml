@@ -11,7 +11,7 @@
         android:layout_weight="1" >
     </RelativeLayout>
 
-    <com.sourcethought.sightnavi.view.NavigationBar
+    <org.jint.bmy.sightnavi.view.NavigationBar
         android:id="@+id/navigationBar"
         android:layout_width="fill_parent"
         android:layout_height="44dp" />

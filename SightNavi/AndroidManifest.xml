@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sourcethought.sightnavi"
+    package="org.jint.bmy.sightnavi"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -10,14 +10,14 @@
         android:debuggable="true"
         android:icon="@drawable/bmy_icon"
         android:label="@string/app_name" >
-        <activity android:name="com.sourcethought.sightnavi.view.SelectLanguageActivity" android:configChanges="keyboard|keyboardHidden|orientation">
+        <activity android:name="org.jint.bmy.sightnavi.view.SelectLanguageActivity" android:configChanges="keyboard|keyboardHidden|orientation">
             <intent-filter >
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.sourcethought.sightnavi.view.SearchSightSpotActivity" android:configChanges="keyboard|keyboardHidden|orientation">
+        <activity android:name="org.jint.bmy.sightnavi.view.SearchSightSpotActivity" android:configChanges="keyboard|keyboardHidden|orientation">
         </activity>
         <activity android:name="org.jint.bmy.sightnavi.view.ContentViewActivity" android:configChanges="keyboard|keyboardHidden|orientation">
         </activity>

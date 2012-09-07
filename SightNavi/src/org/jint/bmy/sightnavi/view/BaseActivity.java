@@ -3,6 +3,7 @@ package org.jint.bmy.sightnavi.view;
 import java.io.File;
 import java.util.Locale;
 
+import org.jint.bmy.sightnavi.R;
 import org.jint.bmy.sightnavi.util.LogUtil;
 
 import android.app.Activity;
@@ -23,7 +24,6 @@ import android.view.WindowManager;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.sourcethought.sightnavi.R;
 
 /**
  * @author jintian

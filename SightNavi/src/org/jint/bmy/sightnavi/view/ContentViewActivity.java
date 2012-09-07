@@ -5,6 +5,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import org.jint.bmy.sightnavi.ApplicationContext;
+import org.jint.bmy.sightnavi.R;
 import org.jint.bmy.sightnavi.model.Sight;
 
 import android.media.MediaPlayer;
@@ -16,7 +17,6 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.SeekBar;
 
-import com.sourcethought.sightnavi.R;
 
 /**
  * @author jintian

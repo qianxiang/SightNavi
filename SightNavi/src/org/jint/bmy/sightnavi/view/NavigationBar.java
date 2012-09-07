@@ -2,6 +2,8 @@ package org.jint.bmy.sightnavi.view;
 
 import java.util.ArrayList;
 
+import org.jint.bmy.sightnavi.R;
+
 import android.app.Activity;
 import android.content.Context;
 import android.util.AttributeSet;
@@ -12,7 +14,6 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.sourcethought.sightnavi.R;
 
 /**
  * @author jintian

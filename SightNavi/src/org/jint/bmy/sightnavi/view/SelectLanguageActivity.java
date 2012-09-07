@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Locale;
 
 import org.jint.bmy.sightnavi.ApplicationContext;
+import org.jint.bmy.sightnavi.R;
 import org.jint.bmy.sightnavi.model.Service;
 import org.jint.bmy.sightnavi.model.Sight;
 import org.jint.bmy.sightnavi.model.SightBSLoadSightsByLocale;
@@ -13,7 +14,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioGroup;
 
-import com.sourcethought.sightnavi.R;
 
 /**
  * @author jintian

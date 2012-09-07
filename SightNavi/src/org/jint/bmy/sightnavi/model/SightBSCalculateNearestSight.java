@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class SightBSCalculateNearestSight extends Service {
 	private ArrayList<Device> devices;
 	private ArrayList<Sight> sights;
-	private Device nearestDevice;
+	//private Device nearestDevice;
 	private Sight nearestSight;
 
 	@Override

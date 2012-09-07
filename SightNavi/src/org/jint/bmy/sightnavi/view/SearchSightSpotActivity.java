@@ -6,6 +6,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import org.jint.bmy.sightnavi.ApplicationContext;
+import org.jint.bmy.sightnavi.R;
 import org.jint.bmy.sightnavi.model.Device;
 import org.jint.bmy.sightnavi.model.Service;
 import org.jint.bmy.sightnavi.model.Sight;
@@ -28,7 +29,6 @@ import android.widget.GridView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.sourcethought.sightnavi.R;
 
 /**
  * @author jintian

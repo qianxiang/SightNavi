@@ -8,6 +8,11 @@ import java.io.Serializable;
  */
 public class Sight implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	private String id;
 	private String name;
 	private int duration;
