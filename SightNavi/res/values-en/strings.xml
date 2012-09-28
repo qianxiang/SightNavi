@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Sight Navi</string>
+    <string name="splash_image">splash image</string>
     <string name="yes">Yes</string>
 	<string name="back">Back</string>
 	<string name="start">Start</string>
 	<string name="auto">Auto</string>
 	<string name="manual">Manual</string>
-	<string name="sight_searching">Searching the nearest sight...</string>
+	<string name="sight_searching">Searching the nearest sight…</string>
 	<string name="sight_stop_searching">Searching has been stoped</string>
 	<string name="choose_sight_manual">You can aslo choose the sight manually</string>
 	<string name="mount_sdcard">Please mount the sd card and restart application</string>

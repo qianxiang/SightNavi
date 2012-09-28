@@ -7,6 +7,7 @@ import java.util.TimerTask;
 import org.jint.bmy.sightnavi.ApplicationContext;
 import org.jint.bmy.sightnavi.R;
 import org.jint.bmy.sightnavi.model.Sight;
+import org.jint.util.FileUtil;
 
 import android.media.MediaPlayer;
 import android.os.Handler;
@@ -17,10 +18,9 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.SeekBar;
 
-
 /**
  * @author jintian
- *
+ * 
  */
 public class ContentViewActivity extends BaseActivity {
 	private static final int PLAY_STATE_PLAY = 1;
@@ -52,6 +52,7 @@ public class ContentViewActivity extends BaseActivity {
 
 		audioPath = ApplicationContext.getInstance()
 				.getApplicationStoragePath() + sight.getAudio();
+
 		contentPath = ApplicationContext.getInstance()
 				.getApplicationStoragePath() + sight.getContent();
 
@@ -62,9 +63,9 @@ public class ContentViewActivity extends BaseActivity {
 		// webSettings.setLayoutAlgorithm(LayoutAlgorithm.SINGLE_COLUMN);
 		contentWebView.loadUrl("file://" + contentPath);
 
-		
 		// 音频播放条
-		View audioBar = layoutInflater.inflate(R.layout.content_view_audio_bar, null);
+		View audioBar = layoutInflater.inflate(R.layout.content_view_audio_bar,
+				null);
 		navigationBar.setTitleView(audioBar);
 		playButton = (ImageButton) findViewById(R.id.playButton);
 		playButton.setOnClickListener(new View.OnClickListener() {
@@ -152,7 +153,7 @@ public class ContentViewActivity extends BaseActivity {
 	}
 
 	private void playAudio() {
-		//LogUtil.debug("Start play audio");
+		// LogUtil.debug("Start play audio");
 
 		playButton.setImageResource(android.R.drawable.ic_media_pause);
 
@@ -179,17 +180,22 @@ public class ContentViewActivity extends BaseActivity {
 					}
 				});
 
-		try {
-			mediaPlayer.setDataSource(audioPath);
-			mediaPlayer.prepare();
-			mediaPlayer.start();
+		// 如果音频文件存在，则播放
+		if (FileUtil.isFileExist(audioPath)) {
+			try {
+				mediaPlayer.setDataSource(audioPath);
+				mediaPlayer.prepare();
+				mediaPlayer.start();
 
-			audioPlayBar.setMax(mediaPlayer.getDuration());
-			audioPlayBar.setProgress(0);
+				audioPlayBar.setMax(mediaPlayer.getDuration());
+				audioPlayBar.setProgress(0);
 
-			startAudioPlayTimer();
-		} catch (IOException e) {
-			showToastMessage("Can't play audio " + e);
+				startAudioPlayTimer();
+			} catch (IOException e) {
+				showToastMessage("Can't play audio " + e);
+			}
+		} else {
+			showToastMessage("Audio file not find. ");
 		}
 
 	}
@@ -203,7 +209,7 @@ public class ContentViewActivity extends BaseActivity {
 	}
 
 	private void gotoPlayAudio(int position) {
-		//LogUtil.debug("Goto play audio");
+		// LogUtil.debug("Goto play audio");
 
 		playButton.setImageResource(android.R.drawable.ic_media_pause);
 		playState = PLAY_STATE_PLAY;
@@ -217,7 +223,7 @@ public class ContentViewActivity extends BaseActivity {
 	}
 
 	private void pauseAudio() {
-		//LogUtil.debug("Pause audio");
+		// LogUtil.debug("Pause audio");
 
 		playState = PLAY_STATE_PAUSE;
 
@@ -231,7 +237,7 @@ public class ContentViewActivity extends BaseActivity {
 	}
 
 	private void stopAudio() {
-		//LogUtil.debug("Stop play audio");
+		// LogUtil.debug("Stop play audio");
 
 		if (mediaPlayer != null && playState != PLAY_STATE_STOP) {
 			mediaPlayer.stop();

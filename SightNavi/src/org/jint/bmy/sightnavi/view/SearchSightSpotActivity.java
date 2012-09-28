@@ -11,7 +11,7 @@ import org.jint.bmy.sightnavi.model.Device;
 import org.jint.bmy.sightnavi.model.Service;
 import org.jint.bmy.sightnavi.model.Sight;
 import org.jint.bmy.sightnavi.model.SightBSCalculateNearestSight;
-import org.jint.bmy.sightnavi.util.LogUtil;
+import org.jint.util.LogUtil;
 
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;

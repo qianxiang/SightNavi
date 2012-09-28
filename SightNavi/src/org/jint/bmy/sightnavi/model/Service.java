@@ -1,6 +1,6 @@
 package org.jint.bmy.sightnavi.model;
 
-import org.jint.bmy.sightnavi.util.LogUtil;
+import org.jint.util.LogUtil;
 
 import android.os.AsyncTask;
 

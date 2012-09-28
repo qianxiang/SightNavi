@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.Locale;
 
 import org.jint.bmy.sightnavi.R;
-import org.jint.bmy.sightnavi.util.LogUtil;
+import org.jint.util.LogUtil;
 
 import android.app.Activity;
 import android.app.AlertDialog;

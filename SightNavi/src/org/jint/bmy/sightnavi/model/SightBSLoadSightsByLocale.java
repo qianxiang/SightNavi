@@ -25,6 +25,7 @@ public class SightBSLoadSightsByLocale extends Service{
 		
 		InputStream inStream = assetManager.open(sightDataPath);
 		
+		
 		XStream xstream = new XStream(new DomDriver());
 		xstream.alias("sights", ArrayList.class);
 		xstream.alias("sight", Sight.class);

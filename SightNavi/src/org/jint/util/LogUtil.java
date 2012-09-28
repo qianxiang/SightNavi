@@ -1,4 +1,4 @@
-package org.jint.bmy.sightnavi.util;
+package org.jint.util;
 
 import java.io.IOException;
 
