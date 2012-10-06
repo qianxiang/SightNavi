@@ -195,7 +195,7 @@ public class ContentViewActivity extends BaseActivity {
 				showToastMessage("Can't play audio " + e);
 			}
 		} else {
-			showToastMessage("Audio file not find. ");
+			showToastMessage("无语音讲解。");
 		}
 
 	}

@@ -4,7 +4,7 @@
     android:versionCode="1"
     android:versionName="1.0" xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-sdk android:minSdkVersion="8"  android:targetSdkVersion="8" />
+    <uses-sdk android:minSdkVersion="10"  android:targetSdkVersion="10" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
     </uses-permission>
@@ -12,6 +12,8 @@
     </uses-permission>
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" >
     </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
     
     <application
     
@@ -23,6 +25,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="org.jint.bmy.sightnavi.view.DownloadContentActivity" android:configChanges="keyboard|keyboardHidden|orientation">
         </activity>
         <activity android:name="org.jint.bmy.sightnavi.view.SelectLanguageActivity" android:configChanges="keyboard|keyboardHidden|orientation">
         </activity>
