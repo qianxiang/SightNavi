@@ -9,7 +9,7 @@ import android.util.Log;
  *
  */
 public class LogUtil {
-	private static String tag;
+	private static String tag = "other";
 	private static String logFilePath;
 	private static boolean isWriteToFile = false;
 	

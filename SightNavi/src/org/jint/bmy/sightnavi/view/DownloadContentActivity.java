@@ -1,6 +1,8 @@
 package org.jint.bmy.sightnavi.view;
 
+import org.jint.bmy.sightnavi.ApplicationContext;
 import org.jint.bmy.sightnavi.R;
+import org.jint.util.FileUtil;
 import org.jint.util.LogUtil;
 
 import android.app.Activity;
@@ -11,7 +13,6 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -24,7 +25,9 @@ public class DownloadContentActivity extends Activity {
 	private DownloadManager dMgr;
 	private TextView tv;
 	private long downloadId;
-	private String downloadFileName = "a.zip";
+	private String downloadSiteUrl = "http://108.174.50.201/";
+	private String downloadFileName = "contents.zip";  // "a.zip";
+	private String downloadPath = null;
 
 	/** Called when the activity is first created. */
 	@Override
@@ -41,12 +44,17 @@ public class DownloadContentActivity extends Activity {
 		dMgr = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
 		IntentFilter filter = new IntentFilter(
 				DownloadManager.ACTION_DOWNLOAD_COMPLETE);
+		
+		Context context = this;
+		downloadPath = context.getExternalFilesDir(null).getAbsolutePath();
+		LogUtil.debug("Downloading to dir " + downloadPath);
+		
 		registerReceiver(mReceiver, filter);
 	}
 
 	public void doClick(View view) {
 		DownloadManager.Request dmReq = new DownloadManager.Request(
-				Uri.parse("http://108.174.50.201/" + downloadFileName));
+				Uri.parse( downloadSiteUrl + downloadFileName));
 		dmReq.setTitle("兵马俑导览多媒体资源");
 		dmReq.setDescription("Download for Audio and Pic of BMY.");
 
@@ -54,16 +62,14 @@ public class DownloadContentActivity extends Activity {
 		// 如果不限制网络类型 wifi 和 mobile，则不要设置。
 		// dmReq.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_WIFI);
 
-		//禁止发出通知，既后台下载  
-		dmReq.setShowRunningNotification(true);  
-        //不显示下载界面  
-        dmReq.setVisibleInDownloadsUi(true);  
+		// 发出通知
+		dmReq.setShowRunningNotification(true);
+		// 显示下载界面
+		dmReq.setVisibleInDownloadsUi(true);
 		// 设置下载文件保存目录
 		dmReq.setDestinationInExternalFilesDir(this, null, downloadFileName);
+
 		
-		final Context context = this;
-		final String dir = context.getExternalFilesDir(null).getAbsolutePath();
-		Log.i(TAG, "Downloading to dir " + dir);
 
 		downloadId = dMgr.enqueue(dmReq);
 		tv.setText("Download started... (" + downloadId + ")");
@@ -76,11 +82,23 @@ public class DownloadContentActivity extends Activity {
 					.getLong(DownloadManager.EXTRA_DOWNLOAD_ID);
 			tv.setText(tv.getText() + "\nDownload finished (" + doneDownloadId
 					+ ")");
-			
+
 			// 解压缩文件到工作目录
-			
+			String srcPath = downloadPath + "/" + downloadFileName;
+			LogUtil.debug(srcPath);
+			ApplicationContext ctx = ApplicationContext.getInstance();
+			String targetPath = ctx.getApplicationStoragePath() + "/";
+			LogUtil.debug(srcPath);
+			LogUtil.debug(targetPath);
+			FileUtil.Unzip(srcPath, targetPath);
+
 			// 删除下载的文件
+			FileUtil.deleteFile(srcPath);
 			
+			// 显示提示信息
+			tv.setText(R.string.please_reopen);
+			
+
 			if (downloadId == doneDownloadId)
 				LogUtil.debug("Our download has completed.");
 		}

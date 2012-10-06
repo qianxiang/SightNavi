@@ -11,4 +11,8 @@
 	<string name="sight_stop_searching">Searching has been stoped</string>
 	<string name="choose_sight_manual">You can aslo choose the sight manually</string>
 	<string name="mount_sdcard">Please mount the sd card and restart application</string>
+    <string name="please_download">Please download extended package. 36 MBytes.</string>
+	<string name="start_download">Start Download.</string>
+	<string name="end_download">Download finished.</string>
+	<string name="please_reopen">Download finished. Please back and reopen App.</string>
 </resources>

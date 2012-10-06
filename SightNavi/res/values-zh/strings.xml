@@ -10,7 +10,8 @@
 	<string name="sight_stop_searching">自动搜索已被停止</string>
 	<string name="choose_sight_manual">您也可以手动选择景点介绍</string>
 	<string name="mount_sdcard">请装载SD卡，并且重新启动程序</string>
-	<string name="please_download">您需要下载必需的语音和图片</string>
+	<string name="please_download">您需要下载必需的语音和图片。需下载36MB的数据。</string>
 	<string name="start_download">开始下载</string>
-	<string name="end_download">开始下载</string>
+	<string name="end_download">下载完成</string>
+	<string name="please_reopen">下载完成，请返回重新打开导览程序。</string>
 </resources>
