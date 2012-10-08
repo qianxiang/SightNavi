@@ -14,6 +14,7 @@ import android.content.IntentFilter;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 /**
@@ -24,6 +25,7 @@ public class DownloadContentActivity extends Activity {
 	protected static final String TAG = "DownloadMgr";
 	private DownloadManager dMgr;
 	private TextView tv;
+	private Button btn_download;
 	private long downloadId;
 	private String downloadSiteUrl = "http://108.174.50.201/";
 	private String downloadFileName = "contents.zip";  // "a.zip";
@@ -35,7 +37,7 @@ public class DownloadContentActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.download);
 		tv = (TextView) findViewById(R.id.tv);
-
+		btn_download = (Button) findViewById(R.id.btn_download);
 	}
 
 	@Override
@@ -73,6 +75,7 @@ public class DownloadContentActivity extends Activity {
 
 		downloadId = dMgr.enqueue(dmReq);
 		tv.setText("Download started... (" + downloadId + ")");
+		btn_download.setVisibility(View.INVISIBLE);
 	}
 
 	public BroadcastReceiver mReceiver = new BroadcastReceiver() {
