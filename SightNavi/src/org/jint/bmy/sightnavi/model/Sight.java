@@ -18,6 +18,15 @@ public class Sight implements Serializable{
 	private int duration;
 	private String content;
 	private String audio;
+	private int showCount;
+
+	public int getShowNumber() {
+		return showCount;
+	}
+
+	public void setShowNumber(int showNumber) {
+		this.showCount = showNumber;
+	}
 
 	public String getId() {
 		return id;
