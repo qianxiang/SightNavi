@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  * @author jintian
- *
+ * 
  */
 public class SightBSCalculateNearestSight extends Service {
 	private ArrayList<Device> devices;
@@ -53,14 +53,24 @@ public class SightBSCalculateNearestSight extends Service {
 				String sightId = sight.getId().toUpperCase();
 				String deviceAddress = device.getMac();
 
-				if (sightId.equals(deviceAddress)) {
+				// 匹配MAC地址列表的情况
+				if (sightId.indexOf(deviceAddress) > -1) {
 					nearestSight = sight;
 				}
-				if ( null != nearestSight ) break;
+				// 匹配单一MAC地址的情况
+				// if (sightId.equals(deviceAddress)) {
+				// nearestSight = sight;
+				// }
+				
+				
+				if (null != nearestSight){
+					break;
+				}
 			}
-			if ( null != nearestSight ) break;
+			if (null != nearestSight)
+				break;
 		}
-		
+
 	}
 
 	public ArrayList<Device> getDevices() {
