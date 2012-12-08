@@ -30,7 +30,7 @@ public class ContentViewActivity extends BaseActivity {
 
 	private WebView contentWebView;
 	private ImageButton playButton;
-	private SeekBar audioPlayBar;
+	//private SeekBar audioPlayBar;
 	private Button playTypeButton;
 	private int playState;
 	private Timer audioPlayTimer;
@@ -70,230 +70,231 @@ public class ContentViewActivity extends BaseActivity {
 		contentWebView.loadUrl("file:///android_asset/contents" + sight.getContent());
 
 		// 音频播放条
-		View audioBar = layoutInflater.inflate(R.layout.content_view_audio_bar,
-				null);
-		navigationBar.setTitleView(audioBar);
-		playButton = (ImageButton) findViewById(R.id.playButton);
-		playButton.setOnClickListener(new View.OnClickListener() {
-
-			public void onClick(View v) {
-				toggleAudio();
-			}
-		});
-
-		audioPlayBar = (SeekBar) findViewById(R.id.audioPlayBar);
-		audioPlayBar
-				.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-
-					public void onProgressChanged(SeekBar seekBar,
-							int progress, boolean fromUser) {
-
-					}
-
-					public void onStartTrackingTouch(SeekBar seekBar) {
-						pauseAudio();
-					}
-
-					public void onStopTrackingTouch(SeekBar seekBar) {
-						gotoPlayAudio(audioPlayBar.getProgress());
-					}
-
-				});
-
-		playTypeButton = (Button) layoutInflater.inflate(
-				R.layout.navigation_bar_button, null);
-		playTypeButton.setOnClickListener(new View.OnClickListener() {
-
-			public void onClick(View v) {
-				playTypeButtonOnClick(v);
-			}
-		});
-		if (ApplicationContext.getInstance().getPlayType() == ApplicationContext.PLAY_TYPE_AUTO) {
-			playTypeButton.setText(getString(R.string.auto));
-		} else {
-			playTypeButton.setText(getString(R.string.manual));
-		}
-		navigationBar.addRightView(playTypeButton);
-
-		// 自动播放音频
-		if (ApplicationContext.getInstance().getPlayType() == ApplicationContext.PLAY_TYPE_AUTO) {
-			playAudio();
-		}
+//		View audioBar = layoutInflater.inflate(R.layout.content_view_audio_bar,
+//				null);
+//		navigationBar.setTitleView(audioBar);
+//		playButton = (ImageButton) findViewById(R.id.playButton);
+//		playButton.setOnClickListener(new View.OnClickListener() {
+//
+//			public void onClick(View v) {
+//				toggleAudio();
+//			}
+//		});
+//
+//		audioPlayBar = (SeekBar) findViewById(R.id.audioPlayBar);
+//		audioPlayBar
+//				.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+//
+//					public void onProgressChanged(SeekBar seekBar,
+//							int progress, boolean fromUser) {
+//
+//					}
+//
+//					public void onStartTrackingTouch(SeekBar seekBar) {
+//						pauseAudio();
+//					}
+//
+//					public void onStopTrackingTouch(SeekBar seekBar) {
+//						gotoPlayAudio(audioPlayBar.getProgress());
+//					}
+//
+//				});
+//
+//		playTypeButton = (Button) layoutInflater.inflate(
+//				R.layout.navigation_bar_button, null);
+//		playTypeButton.setOnClickListener(new View.OnClickListener() {
+//
+//			public void onClick(View v) {
+//				playTypeButtonOnClick(v);
+//			}
+//		});
+//		if (ApplicationContext.getInstance().getPlayType() == ApplicationContext.PLAY_TYPE_AUTO) {
+//			playTypeButton.setText(getString(R.string.auto));
+//		} else {
+//			playTypeButton.setText(getString(R.string.manual));
+//		}
+//		navigationBar.addRightView(playTypeButton);
+//
+//		// 自动播放音频
+//		if (ApplicationContext.getInstance().getPlayType() == ApplicationContext.PLAY_TYPE_AUTO) {
+//			playAudio();
+//		}
+		
 
 		// 显示标题
 		// navigationBar.setTitle(sight.getName());
 	}
 
-	@Override
-	public void finish() {
-		stopAudio();
-		super.finish();
-	}
+//	@Override
+//	public void finish() {
+//		stopAudio();
+//		super.finish();
+//	}
+//
+//	@Override
+//	protected void onDestroy() {
+//		stopAudio();
+//		super.onDestroy();
+//	}
 
-	@Override
-	protected void onDestroy() {
-		stopAudio();
-		super.onDestroy();
-	}
+//	public void playTypeButtonOnClick(View v) {
+//		if (ApplicationContext.getInstance().getPlayType() == ApplicationContext.PLAY_TYPE_AUTO) {
+//			ApplicationContext.getInstance().setPlayType(
+//					ApplicationContext.PLAY_TYPE_MANUAL);
+//			playTypeButton.setText(getString(R.string.manual));
+//			stopAudio();
+//		} else {
+//			ApplicationContext.getInstance().setPlayType(
+//					ApplicationContext.PLAY_TYPE_AUTO);
+//			playTypeButton.setText(getString(R.string.auto));
+//			playAudio();
+//		}
+//	}
 
-	public void playTypeButtonOnClick(View v) {
-		if (ApplicationContext.getInstance().getPlayType() == ApplicationContext.PLAY_TYPE_AUTO) {
-			ApplicationContext.getInstance().setPlayType(
-					ApplicationContext.PLAY_TYPE_MANUAL);
-			playTypeButton.setText(getString(R.string.manual));
-			stopAudio();
-		} else {
-			ApplicationContext.getInstance().setPlayType(
-					ApplicationContext.PLAY_TYPE_AUTO);
-			playTypeButton.setText(getString(R.string.auto));
-			playAudio();
-		}
-	}
+//	private void toggleAudio() {
+//		if (playState == PLAY_STATE_PLAY) {
+//			pauseAudio();
+//		} else {
+//			playAudio();
+//		}
+//	}
 
-	private void toggleAudio() {
-		if (playState == PLAY_STATE_PLAY) {
-			pauseAudio();
-		} else {
-			playAudio();
-		}
-	}
+//	private void playAudio() {
+//		// LogUtil.debug("Start play audio");
+//
+//		playButton.setImageResource(android.R.drawable.ic_media_pause);
+//
+//		if (playState == PLAY_STATE_PAUSE) {
+//			playState = PLAY_STATE_PLAY;
+//
+//			if (mediaPlayer != null) {
+//				mediaPlayer.start();
+//			}
+//
+//			startAudioPlayTimer();
+//
+//			return;
+//		}
+//
+//		playState = PLAY_STATE_PLAY;
+//
+//		mediaPlayer = new MediaPlayer();
+//		mediaPlayer
+//				.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+//
+//					public void onCompletion(MediaPlayer mp) {
+//						mediaPlayerOnCompletaion(mp);
+//					}
+//				});
+//
+//		// 如果音频文件存在，则播放
+//		if (FileUtil.isFileExist(audioPath)) {
+//			try {
+//				mediaPlayer.setDataSource(audioPath);
+//				mediaPlayer.prepare();
+//				mediaPlayer.start();
+//
+//				audioPlayBar.setMax(mediaPlayer.getDuration());
+//				audioPlayBar.setProgress(0);
+//
+//				startAudioPlayTimer();
+//			} catch (IOException e) {
+//				showToastMessage("Can't play audio " + e);
+//			}
+//		} else {
+//			// 基于业务考虑，不显示Toast提示
+//			//showToastMessage("无语音讲解。");
+//			LogUtil.debug("Not find audio file.");
+//		}
+//
+//	}
 
-	private void playAudio() {
-		// LogUtil.debug("Start play audio");
+//	protected void mediaPlayerOnCompletaion(MediaPlayer mp) {
+//		if (ApplicationContext.getInstance().getPlayType() == ApplicationContext.PLAY_TYPE_AUTO) {
+//			finish();
+//		} else if (ApplicationContext.getInstance().getPlayType() == ApplicationContext.PLAY_TYPE_MANUAL) {
+//			stopAudio();
+//		}
+//	}
 
-		playButton.setImageResource(android.R.drawable.ic_media_pause);
+//	private void gotoPlayAudio(int position) {
+//		// LogUtil.debug("Goto play audio");
+//
+//		playButton.setImageResource(android.R.drawable.ic_media_pause);
+//		playState = PLAY_STATE_PLAY;
+//
+//		if (mediaPlayer != null) {
+//			mediaPlayer.seekTo(position);
+//			mediaPlayer.start();
+//
+//			startAudioPlayTimer();
+//		}
+//	}
 
-		if (playState == PLAY_STATE_PAUSE) {
-			playState = PLAY_STATE_PLAY;
+//	private void pauseAudio() {
+//		// LogUtil.debug("Pause audio");
+//
+//		playState = PLAY_STATE_PAUSE;
+//
+//		stopAudioPlayTimer();
+//
+//		playButton.setImageResource(android.R.drawable.ic_media_play);
+//
+//		if (mediaPlayer != null) {
+//			mediaPlayer.pause();
+//		}
+//	}
 
-			if (mediaPlayer != null) {
-				mediaPlayer.start();
-			}
+//	private void stopAudio() {
+//		// LogUtil.debug("Stop play audio");
+//
+//		if (mediaPlayer != null && playState != PLAY_STATE_STOP) {
+//			mediaPlayer.stop();
+//			mediaPlayer.release();
+//		}
+//
+//		playState = PLAY_STATE_STOP;
+//
+//		playButton.setImageResource(android.R.drawable.ic_media_play);
+//		stopAudioPlayTimer();
+//		audioPlayBar.setProgress(0);
+//	}
 
-			startAudioPlayTimer();
+//	private void startAudioPlayTimer() {
+//		audioPlayTimer = new Timer();
+//		audioPlayTimer.scheduleAtFixedRate(new AudioPlayTimerTask(), 0, 1000);
+//	}
+//
+//	private void stopAudioPlayTimer() {
+//
+//		if (audioPlayTimer != null) {
+//			audioPlayTimer.cancel();
+//		}
+//	}
 
-			return;
-		}
+//	private void addAudioPlayTime() {
+//
+//		if (playState != PLAY_STATE_PLAY) {
+//			return;
+//		}
+//
+//		int position = mediaPlayer.getCurrentPosition();
+//		audioPlayBar.setProgress(position);
+//
+//	}
 
-		playState = PLAY_STATE_PLAY;
-
-		mediaPlayer = new MediaPlayer();
-		mediaPlayer
-				.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-
-					public void onCompletion(MediaPlayer mp) {
-						mediaPlayerOnCompletaion(mp);
-					}
-				});
-
-		// 如果音频文件存在，则播放
-		if (FileUtil.isFileExist(audioPath)) {
-			try {
-				mediaPlayer.setDataSource(audioPath);
-				mediaPlayer.prepare();
-				mediaPlayer.start();
-
-				audioPlayBar.setMax(mediaPlayer.getDuration());
-				audioPlayBar.setProgress(0);
-
-				startAudioPlayTimer();
-			} catch (IOException e) {
-				showToastMessage("Can't play audio " + e);
-			}
-		} else {
-			// 基于业务考虑，不显示Toast提示
-			//showToastMessage("无语音讲解。");
-			LogUtil.debug("Not find audio file.");
-		}
-
-	}
-
-	protected void mediaPlayerOnCompletaion(MediaPlayer mp) {
-		if (ApplicationContext.getInstance().getPlayType() == ApplicationContext.PLAY_TYPE_AUTO) {
-			finish();
-		} else if (ApplicationContext.getInstance().getPlayType() == ApplicationContext.PLAY_TYPE_MANUAL) {
-			stopAudio();
-		}
-	}
-
-	private void gotoPlayAudio(int position) {
-		// LogUtil.debug("Goto play audio");
-
-		playButton.setImageResource(android.R.drawable.ic_media_pause);
-		playState = PLAY_STATE_PLAY;
-
-		if (mediaPlayer != null) {
-			mediaPlayer.seekTo(position);
-			mediaPlayer.start();
-
-			startAudioPlayTimer();
-		}
-	}
-
-	private void pauseAudio() {
-		// LogUtil.debug("Pause audio");
-
-		playState = PLAY_STATE_PAUSE;
-
-		stopAudioPlayTimer();
-
-		playButton.setImageResource(android.R.drawable.ic_media_play);
-
-		if (mediaPlayer != null) {
-			mediaPlayer.pause();
-		}
-	}
-
-	private void stopAudio() {
-		// LogUtil.debug("Stop play audio");
-
-		if (mediaPlayer != null && playState != PLAY_STATE_STOP) {
-			mediaPlayer.stop();
-			mediaPlayer.release();
-		}
-
-		playState = PLAY_STATE_STOP;
-
-		playButton.setImageResource(android.R.drawable.ic_media_play);
-		stopAudioPlayTimer();
-		audioPlayBar.setProgress(0);
-	}
-
-	private void startAudioPlayTimer() {
-		audioPlayTimer = new Timer();
-		audioPlayTimer.scheduleAtFixedRate(new AudioPlayTimerTask(), 0, 1000);
-	}
-
-	private void stopAudioPlayTimer() {
-
-		if (audioPlayTimer != null) {
-			audioPlayTimer.cancel();
-		}
-	}
-
-	private void addAudioPlayTime() {
-
-		if (playState != PLAY_STATE_PLAY) {
-			return;
-		}
-
-		int position = mediaPlayer.getCurrentPosition();
-		audioPlayBar.setProgress(position);
-
-	}
-
-	class AudioPlayTimerTask extends TimerTask {
-
-		@Override
-		public void run() {
-			handler.post(new Runnable() {
-
-				public void run() {
-					addAudioPlayTime();
-				}
-			});
-
-		}
-
-	}
+//	class AudioPlayTimerTask extends TimerTask {
+//
+//		@Override
+//		public void run() {
+//			handler.post(new Runnable() {
+//
+//				public void run() {
+//					addAudioPlayTime();
+//				}
+//			});
+//
+//		}
+//
+//	}
 }
