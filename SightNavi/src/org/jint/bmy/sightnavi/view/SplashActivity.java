@@ -33,8 +33,9 @@ public class SplashActivity extends BaseActivity {
 		public void run() {
 			String contentPath = ApplicationContext.getInstance()
 					.getApplicationStoragePath() + "/zh";
-			LogUtil.debug(contentPath);
+			//LogUtil.debug(contentPath);
 			
+			/*
 			if( FileUtil.isFileExist(contentPath) ){
 				startActivity(new Intent(getApplication(),
 						SelectLanguageActivity.class));
@@ -42,14 +43,12 @@ public class SplashActivity extends BaseActivity {
 				startActivity(new Intent(getApplication(),
 						DownloadContentActivity.class));
 			}
+			*/
 			
-			
-
-			
-
+			startActivity(new Intent(getApplication(),
+					SelectLanguageActivity.class));
 			SplashActivity.this.finish();
 		}
-
 	}
 
 }
