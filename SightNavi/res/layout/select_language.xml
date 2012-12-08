@@ -48,7 +48,9 @@
             android:id="@+id/englishRadio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="English" />
+            android:text="English"
+            android:visibility="invisible" />
+
     </RadioGroup>
 
     <Button
