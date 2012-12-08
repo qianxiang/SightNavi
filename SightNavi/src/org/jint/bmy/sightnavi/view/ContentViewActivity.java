@@ -8,6 +8,7 @@ import org.jint.bmy.sightnavi.ApplicationContext;
 import org.jint.bmy.sightnavi.R;
 import org.jint.bmy.sightnavi.model.Sight;
 import org.jint.util.FileUtil;
+import org.jint.util.LogUtil;
 
 import android.media.MediaPlayer;
 import android.os.Handler;
@@ -61,7 +62,12 @@ public class ContentViewActivity extends BaseActivity {
 		webSettings.setJavaScriptEnabled(true);
 		webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
 		// webSettings.setLayoutAlgorithm(LayoutAlgorithm.SINGLE_COLUMN);
-		contentWebView.loadUrl("file://" + contentPath);
+		
+		// 使用SD卡上的html资源
+		// contentWebView.loadUrl("file://" + contentPath);
+		
+		// 使用apk中的html资源
+		contentWebView.loadUrl("file:///android_asset/contents" + sight.getContent());
 
 		// 音频播放条
 		View audioBar = layoutInflater.inflate(R.layout.content_view_audio_bar,
@@ -195,7 +201,9 @@ public class ContentViewActivity extends BaseActivity {
 				showToastMessage("Can't play audio " + e);
 			}
 		} else {
-			showToastMessage("无语音讲解。");
+			// 基于业务考虑，不显示Toast提示
+			//showToastMessage("无语音讲解。");
+			LogUtil.debug("Not find audio file.");
 		}
 
 	}
