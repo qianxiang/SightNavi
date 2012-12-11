@@ -5,7 +5,7 @@
 		<name>00.Welcome</name>
 		<duration>3000</duration>
 		<content>/en/00/welcome.html</content>
-		<audio>/en/00/15.Welcome.mp3</audio>
+		<audio>/en/00/Welcome.mp3</audio>
 	</sight>
 	<sight>
 		<id></id>
@@ -16,21 +16,21 @@
 	</sight>
 	<sight>
 		<id>00:11:12:16:13:19,00:11:12:06:02:48,</id>
-		<name>02.Battle Array in Pitt One</name>
+		<name>02.Battle Array in Pit One</name>
 		<duration>3000</duration>
 		<content>/en/02/page.html</content>
 		<audio>/en/02/13.mp3</audio>
 	</sight>
 	<sight>
 		<id></id>
-		<name>03.Battle Array in Pitt One</name>
+		<name>03.Structure of Pit One</name>
 		<duration>3000</duration>
 		<content>/en/03/page.html</content>
 		<audio>/en/03/14.mp3</audio>
 	</sight>
 	<sight>
 		<id></id>
-		<name>04.Bricks in Pitt One(only Pic)</name>
+		<name>04.Bricks in Pit One(only Pic)</name>
 		<duration>3000</duration>
 		<content>/en/04/page.html</content>
 		<audio>/en/04/一号坑的地砖.mp3</audio>
@@ -65,7 +65,7 @@
 	</sight>
 	<sight>
 		<id>00:11:12:06:03:09,00:11:12:06:02:63,</id>
-		<name>09.Pitt Two</name>
+		<name>09.Pit Two</name>
 		<duration>3000</duration>
 		<content>/en/09/page.html</content>
 		<audio>/en/09/21.mp3</audio>
@@ -149,14 +149,14 @@
 	</sight>
 	<sight>
 		<id></id>
-		<name>21.Weapons in Pitt Two</name>
+		<name>21.Weapons in Pit Two</name>
 		<duration>3000</duration>
 		<content>/en/21/page.html</content>
 		<audio>/en/21/33.mp3</audio>
 	</sight>
 	<sight>
 		<id>00:11:12:16:13:25,00:11:12:06:02:20,00:11:12:06:03:36,00:11:12:06:02:49,00:11:12:06:03:97,</id>
-		<name>22.Pitt Three</name>
+		<name>22.Pit Three</name>
 		<duration>3000</duration>
 		<content>/en/22/page.html</content>
 		<audio>/en/22/34.mp3</audio>

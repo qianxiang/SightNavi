@@ -4,8 +4,7 @@
 		<id>00:11:12:16:12:61,00:11:12:06:01:60,</id>
 		<name>00.欢迎您来到兵马俑</name>
 		<duration>3000</duration>
-		<content>/zh/00
-		    /welcome.html</content>
+		<content>/zh/00/welcome.html</content>
 		<audio>/zh/00/welcome.mp3</audio>
 	</sight>
 	<sight>
@@ -152,36 +151,36 @@
 		<id></id>
 		<name>21.二号坑兵器</name>
 		<duration>3000</duration>
-		<content>/zh/22/page.html</content>
-		<audio>/zh/22/二号坑兵器.mp3</audio>
+		<content>/zh/21/page.html</content>
+		<audio>/zh/21/二号坑兵器.mp3</audio>
 	</sight>
 	<sight>
 		<id>00:11:12:16:13:25,00:11:12:06:02:20,00:11:12:06:03:36,00:11:12:06:02:49,00:11:12:06:03:97,</id>
 		<name>22.三号坑</name>
 		<duration>3000</duration>
-		<content>/zh/23/page.html</content>
-		<audio>/zh/23/三号坑.mp3</audio>
+		<content>/zh/22/page.html</content>
+		<audio>/zh/22/三号坑.mp3</audio>
 	</sight>
 	<sight>
 		<id></id>
 		<name>23.指挥部</name>
 		<duration>3000</duration>
-		<content>/zh/24/page.html</content>
-		<audio>/zh/24/指挥部.mp3</audio>
+		<content>/zh/23/page.html</content>
+		<audio>/zh/23/指挥部.mp3</audio>
 	</sight>
 	<sight>
 		<id></id>
 		<name>24.铜车马</name>
 		<duration>3000</duration>
-		<content>/zh/25/page.html</content>
-		<audio>/zh/25/铜车马.mp3</audio>
+		<content>/zh/24/page.html</content>
+		<audio>/zh/24/铜车马.mp3</audio>
 	</sight>
 	<sight>
 		<id>00:11:12:07:05:11</id>
 		<name>25.一号车</name>
 		<duration>3000</duration>
-		<content>/zh/26/page.html</content>
-		<audio>/zh/26/一号车.mp3</audio>
+		<content>/zh/25/page.html</content>
+		<audio>/zh/25/一号车.mp3</audio>
 	</sight>
 	<sight>
 		<id>00:11:12:07:83:81</id>
