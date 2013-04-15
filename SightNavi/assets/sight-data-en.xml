@@ -57,7 +57,7 @@
 		<audio>/en/07/08.mp3</audio>
 	</sight>
 	<sight>
-		<id>00:11:12:16:13:33,</id>
+		<id>00:11:12:06:02:59,00:11:12:06:02:60</id>
 		<name>08.Restoring</name>
 		<duration>3000</duration>
 		<content>/en/08/page.html</content>
@@ -183,7 +183,7 @@
 		<audio>/en/25/42.mp3</audio>
 	</sight>
 	<sight>
-		<id>00:11:12:07:83:81</id>
+		<id>00:11:12:06:02:02</id>
 		<name>26.NO.2 Chariot</name>
 		<duration>3000</duration>
 		<content>/en/26/page.html</content>

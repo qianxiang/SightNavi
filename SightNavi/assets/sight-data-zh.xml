@@ -57,7 +57,7 @@
 		<audio>/zh/07/木质战车.mp3</audio>
 	</sight>
 	<sight>
-		<id>00:11:12:16:13:33,</id>
+		<id>00:11:12:06:02:59,00:11:12:06:02:60</id>
 		<name>08.焚毁与修复</name>
 		<duration>3000</duration>
 		<content>/zh/08/page.html</content>
@@ -183,7 +183,7 @@
 		<audio>/zh/25/一号车.mp3</audio>
 	</sight>
 	<sight>
-		<id>00:11:12:07:83:81</id>
+		<id>00:11:12:06:02:02</id>
 		<name>26.二号车</name>
 		<duration>3000</duration>
 		<content>/zh/26/page.html</content>
