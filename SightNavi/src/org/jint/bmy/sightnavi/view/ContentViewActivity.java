@@ -1,37 +1,31 @@
 package org.jint.bmy.sightnavi.view;
 
-import java.io.IOException;
 import java.util.Timer;
-import java.util.TimerTask;
 
 import org.jint.bmy.sightnavi.ApplicationContext;
 import org.jint.bmy.sightnavi.R;
 import org.jint.bmy.sightnavi.model.Sight;
-import org.jint.util.FileUtil;
-import org.jint.util.LogUtil;
 
 import android.media.MediaPlayer;
 import android.os.Handler;
-import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.SeekBar;
 
 /**
  * @author jintian
  * 
  */
 public class ContentViewActivity extends BaseActivity {
-	private static final int PLAY_STATE_PLAY = 1;
-	private static final int PLAY_STATE_PAUSE = 2;
+	//private static final int PLAY_STATE_PLAY = 1;
+	//private static final int PLAY_STATE_PAUSE = 2;
 	private static final int PLAY_STATE_STOP = 3;
 
 	private WebView contentWebView;
 	private ImageButton playButton;
 	//private SeekBar audioPlayBar;
-	private Button playTypeButton;
+	//private Button playTypeButton;
 	private int playState;
 	private Timer audioPlayTimer;
 	private MediaPlayer mediaPlayer;

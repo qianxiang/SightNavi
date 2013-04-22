@@ -2,8 +2,6 @@ package org.jint.bmy.sightnavi.view;
 
 import org.jint.bmy.sightnavi.ApplicationContext;
 import org.jint.bmy.sightnavi.R;
-import org.jint.util.FileUtil;
-import org.jint.util.LogUtil;
 
 import android.content.Intent;
 import android.os.Handler;

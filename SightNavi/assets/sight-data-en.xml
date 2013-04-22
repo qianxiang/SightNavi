@@ -57,7 +57,7 @@
 		<audio>/en/07.木质战车/08.mp3</audio>
 	</sight>
 	<sight>
-		<id>00:11:12:06:02:54</id>
+		<id>00:11:12:06:02:59,00:11:12:06:02:60</id>
 		<name>08.Restoring</name>
 		<duration>3000</duration>
 		<content>/en/08.焚毁与修复/page.html</content>
@@ -183,14 +183,14 @@
 		<audio>/en/26.一号车/42.mp3</audio>
 	</sight>
 	<sight>
-		<id>00:00:00:00:00:0C</id>
+		<id>00:11:12:06:02:02</id>
 		<name>26.NO.2 Chariot</name>
 		<duration>3000</duration>
 		<content>/en/27.二号车/page.html</content>
 		<audio>/en/27.二号车/59.mp3</audio>
 	</sight>
 	<sight>
-		<id>00:00:00:00:00:0D</id>
+		<id>00:11:12:16:12:31</id>
 		<name>27.Ornaments of Bronze Chariots and Horses</name>
 		<duration>3000</duration>
 		<content>/en/28.铜车马零件/page.html</content>
