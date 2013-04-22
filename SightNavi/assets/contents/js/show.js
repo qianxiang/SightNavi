@@ -1,5 +1,5 @@
 //var delay_time = 2000;
-var delay_time = 8000;
+var delay_time = 10000;
 var fun_name; // = function(){};
 var index = 0;
 
